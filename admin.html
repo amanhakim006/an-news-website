@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AN News - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AN News Admin</a>
+            <a href="index.html" class="btn btn-light btn-sm">Go to Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-white">
+                        <h4 class="mb-0">Add New News</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="add-news-form">
+                            <div class="mb-3">
+                                <label class="form-label">News Headline</label>
+                                <input type="text" id="title" class="form-control" placeholder="Enter headline" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Image URL</label>
+                                <input type="url" id="image-url" class="form-control" placeholder="Paste image link here" required>
+                                <div class="form-text">Right click on any Google image -> Copy Image Address</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Description</label>
+                                <textarea id="description" class="form-control" rows="4" placeholder="Enter news details..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Publish News</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
