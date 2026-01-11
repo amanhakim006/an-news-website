@@ -2,15 +2,27 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs, orderBy, query } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-// --- STEP 1: PASTE YOUR FIREBASE CONFIG HERE ---
-// (यह कोड आपको Firebase Console से मिला था, उसे यहाँ पेस्ट करें)
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY_HERE",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAVzIwGYUysSCgFzWc-GsHBL5OCZ4rtEyc",
+  authDomain: "an-news-d9145.firebaseapp.com",
+  projectId: "an-news-d9145",
+  storageBucket: "an-news-d9145.firebasestorage.app",
+  messagingSenderId: "396973145618",
+  appId: "1:396973145618:web:972a443eb164c0f25162cb",
+  measurementId: "G-YJL5297ERY"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 };
 
 // Initialize Firebase
